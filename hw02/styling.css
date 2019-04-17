@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #EBE3E7;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+header {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    color: #EB6302;
+    font-size: 25px;
+
+}
+
+section {
+    display: inline-block;
+    text-align: center;
+}
+
+figure img {
+    width: 250px;
+    height: 250px;
+}
+
+h2 a {
+    color: #976708;
+}
+
+#author-info {
+    height: 35%;
+    width: 35%;
+    text-align: center;
+}
+
+article h2 {
+    color: #113B9D;
+    font-size: 17px;
+}
+
+ol li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    list-style:upper-roman;
+    font-style: oblique;
+    color: #55002E;
+}
