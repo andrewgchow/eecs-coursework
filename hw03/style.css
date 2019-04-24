@@ -1,0 +1,181 @@
+.menu1, .card1, .card2, .card3, header {
+   margin: 10px;
+}
+
+.container {
+   display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: .1fr .2fr 1fr;
+   grid-template-areas:
+      ". a ."
+      "b b b"
+      "c d e ";
+
+   min-height: 100vh;
+}
+
+.author-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 0.10fr .2fr 1fr;
+    grid-template-areas:
+    ". a ."
+    "b b b"
+    ". c . ";
+    min-height: 100vh;
+}
+
+.story-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.05fr .1fr 1fr;
+    grid-template-areas:
+    ". a ."
+    "b b b"
+    "c c c ";
+    min-height: 100vh;
+}
+
+.menu1 {
+grid-area: a;
+}
+
+header {
+  grid-area:b;
+  background: #EBE3E7;
+  height: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.card1 {
+grid-area: c;
+}
+
+.card2 {
+grid-area: d;
+}
+
+.card3 {
+grid-area: e;
+}
+
+
+.card1 section, .card2 section, .card3 section{
+   background: lightblue;
+   height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu1 div {
+    background-color: #EBE3E7;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+h1, h2 {
+    color: #EB6302;
+    font-size: 25px;
+
+}
+
+section {
+    display: inline-block;
+    text-align: center;
+}
+
+figure img {
+    width: 250px;
+    height: 250px;
+}
+
+h2 a {
+    color: #976708;
+}
+
+#author-info {
+    height: 35%;
+    width: 35%;
+    text-align: center;
+}
+
+article h2 {
+    color: #113B9D;
+    font-size: 17px;
+}
+
+ol li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    list-style:upper-roman;
+    font-style: oblique;
+    color: #55002E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  .container {
+     display: grid;
+   grid-template-columns: 1fr;
+     grid-template-rows: .1fr .2fr 1fr 1fr 1fr;
+     grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+
+     min-height: 100vh;
+     text-align: center;
+  }
+
+  .story-detail-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.10fr 1fr;
+      grid-template-areas:
+      "a a a "
+      "b b b"
+      "c c c";
+      min-height: 100vh;
+      text-align: center;
+  }
+
+  article  {
+    align: center;
+  }
+
+
+  .card1 section, .card2 section, .card3 section{
+     background: lightblue;
+     height: 100%;
+  }
+}
